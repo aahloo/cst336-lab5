@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs') %>
+    
+    <a id="searchLink" href="/"> Back to Search </a>
+    <h1 id="favHeader">
+        Favorite Images
+    </h1>
+    
+    <% rows.forEach(function(row) { %>
+        
+        <a class="keywordLink"> <%= row['keyword'] %> </a>
+        
+        <% }); %>
+    
+    <hr/>
+    
+    <div id="favorites"></div>
+
+
+<%- include('partials/footer.ejs') %>
